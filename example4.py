@@ -62,4 +62,7 @@ face_verified = face_client.face.verify_face_to_face(
     face_id1=face_ids[0],
     face_id2=face_id_source
 )
+
+# print(vars(face_verified))
 print('Are these the same faces? Answer: ', face_verified.is_identical)
+print('Confidence: ', face_verified.confidence)
